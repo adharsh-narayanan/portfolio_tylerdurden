@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Fav icon -->
+    <link rel="icon" type="image/x-icon" href="./images/resume.png">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carrois+Gothic&display=swap" rel="stylesheet">
+<!-- font-awesome  cdn-->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  
+    <div id="container">
+          <!-- Navigation bar -->
+        <nav class="navbar">
+        <img id="logo" src="./images/images (1).png" alt="logo">
+        <ul>
+            <!-- to make clickable link  use <a> tag -->
+                <!-- to make navigation to scroll into its section type #id of that section in the respective href attribute -->
+            <li class="top"><a class="links" href="#home"> HOME</a></li>
+            <li class="top"><a class="links" href="#about">ABOUT</a></li>
+            <li class="top"><a class="links" href="#skill">SKILL</a></li>
+            <li class="top"><a class="links" href="#contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <!-- Home -->
+    <!-- section tag is used to create sections -->
+    <section id="home">
+        <div class="title">
+           <h1 id="title_1">I'm Tyler <span style="color:orange"> Durden</span></h1>
+            <p>Lorem ipsum dolor sit amet  consectetur adipisicing <br> elit. Facilis consequatur harum distinctio unde, </p>
+            <!-- download attribute can be used for downlaoding a content.paste its source in href  -->
+            <a id="cv" href="./images/bsc.pdf" download="\">Download CV</a>
+
+        </div>
+        <div class="images">
+            <img class="image_group" id="bg" src="./images/WhatsApp_Image_2023-11-27_at_16.03.20_b25671ad-removebg-preview.png" alt="background">
+            <img class="image_group" id="boy" src="./images/depositphotos_54372567-stock-illustration-business-man-cartoon-presenting-removebg-preview (1).png" alt="boy" >
+
+        
+        </div>
+
+    </section>
+    <!-- About -->
+    <section id="about">
+        <div class="heading">
+                <h2 class="">About me</h2>
+                <p class="intro">Introduction</p>
+            </div>
+            <div class="about_content">
+        
+        <div class="about_image">
+            <img src="./images/office-worker-very-busy_364130-70-removebg-preview.png" alt="about">
+        </div>
+            <div class="about_details">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, eos dignissimos! Aspernatur dignissimos magni saepe rem asperiores alias atque vero porro totam laborum eum cupiditate, quia ex tenetur corporis! Quas.</p>
+            
+            <div class="info">
+                <div class="info_box"><!-- to import icons from font awesome --><i class="fa-regular fa-user" style="color: #000000;"></i>
+                <span>Tyler Duren</span></div>
+                <div class="info_box"> <i class="fa-solid fa-phone">
+                </i> <span>9874563210</span></div>
+                <div class="info_box"><i class="fa-solid fa-envelope"></i>
+                <span>tylerdurden@gmail.com</span></div>
+                <div class="info_box"><i class="fa-brands fa-github"></i>
+                    <span>tyler_d_urden</span>
+                </div>
+            </div>
+            </div>
+        </div>
+            
+        
+
+    </section>
+    <!-- Skill -->
+    
+    <section id="skill">
+        <div class="heading">
+            <h2>Skills</h2>
+            <p>My Skills</p>
+        
+        </div>
+       
+            
+                <div class="progress_container">
+                    <div class="skill_bar">
+                        <!-- html progress bar -->
+                        <div class="progress_bar">
+                            <h3>HTML</h3>
+                            <span>95%</span>
+                         <div  class="base_bar"></div>
+                        <div class="base_bar html_bar"></div>
+                        </div>
+                        <!-- css progress bar -->
+                        <div class="progress_bar">
+                            <h3>CSS</h3>
+                            <span>90%</span>
+                            <div  class="base_bar"></div>
+                            <div class="base_bar css_bar"></div>
+                            
+                        </div>
+                        <!-- jss progress bar -->
+                        <div class="progress_bar">
+                            <h3>Java Script</h3>
+                            <span>85%</span>
+                            <div  class="base_bar"></div>
+                            <div class="base_bar js_bar"></div>
+                           
+                        </div>
+                        <!-- react progress bar -->
+                        <div class="progress_bar">
+                            <h3>React</h3>
+                            <span>89%</span>
+                            <div  class="base_bar"></div>
+                            <div class="base_bar react_bar"></div>
+                          
+                        </div>
+                    </div>
+                    <div class="skill_image">
+                        <img src="./images/1583008-removebg-preview.png" alt="no image">
+                    </div>
+                    <p>
+           
+    
+                </div>
+            
+       
+    </section>
+    <!-- Contact -->
+ <section id="contact">
+        
+            <div class="heading">
+                <h2>Contacts</h2>
+                <p>My Contacts</p>
+            </div>
+            <div class="icon_bar">
+                <div class="icon"><a href="https://www.linkedin.com/feed/?trk=homepage-basic_sign-in-submit" target="_blank"><i class="fa-brands fa-linkedin"></a></i></div>
+                <div class="icon"><a href="https://github.com/" target="_blank"><i class="fa-brands fa-github"></a></i></div>
+                <div class="icon"><a href="https://twitter.com/i/flow/login" target="_blank"><i class="fa-brands fa-twitter"></i></a></div>
+                <div class="icon"><a href="https://www.facebook.com/" target="_blank"><i class="fa-brands fa-facebook"></i></a></div>
+                <div class="icon"><a href="https://www.whatsapp.com/" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
+                <div class="icon"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a></div>
+            </div>
+    </section>
+    
+    <!-- Footer -->
+    <footer>
+        <h4>@my portfolio design 2023, All rights reserved ® durden_tylor </h4>
+        <div class="up">
+           <a href="#container"> <i class="fa-solid fa-arrow-up fa-2x"></i></a> <!-- fa-2x/3x35x to increase the icon size -->
+        </div>
+
+    </footer>
+    
+</body>
+</html>

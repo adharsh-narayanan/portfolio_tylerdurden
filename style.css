@@ -1,0 +1,260 @@
+*{/* to set zero margin to whole website*/
+    margin: 0;
+    font-family: 'Carrois Gothic', sans-serif;
+}
+#container{
+
+    width:100%;
+    height:100vh;/* 1vh=19.2px; 100vh= full screen height */
+    position: relative; /* postioned relative to its normal position */
+}
+#logo{
+    width: 120px;
+}
+
+.navbar{
+    /* to make contents inside nav arrange side by side */
+    display: flex;
+    /* contents on both sides */
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-left: 100px;
+}
+.top{
+    /* to make conents inside list appear side by side */
+    display:inline-block;
+
+    /* to remove list dots */
+    list-style: none;
+    margin: 10px,20px;
+    padding: 10px;
+}
+.links{
+    /* to remove any decorations such as underline, e.t.c */
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+}
+/* to change the color of the text when mouse pointer is on the subject */
+/* hover,active,visited...are called pseudo class. pseudo class specifies a special property of the selected element */
+a:hover{
+    color:red;
+}
+/* Home Section */
+.title{
+    margin-top: 10%;
+    margin-left: 8%;
+}
+#title_1{
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+#cv{
+    color: white;
+    background-color: black;
+    padding:10px 10px;
+    margin:15px 0px;
+    display: inline-block;
+    border-radius:10px;
+    text-decoration: none;
+}
+.images{
+    height:85%;
+     width:50%;
+     /* to make the content position relative to its parent element (.container whose dimentions are already set) */
+     position:absolute;
+     right: 0%;
+     bottom:0px;
+}
+.image_group{
+    /* here to overlap images */
+    position:absolute;
+    height:100%;
+    
+    bottom: 0%;/* initial values */
+    left: 50%;/* initial values */
+    transform: translate(-50%);/* to nullify the left 50% effect */
+    transition:bottom 1s, left 2s;
+}
+.images:hover #bg /* descendent selector */{
+    bottom: 80px;
+    
+}
+.images:hover #boy{
+    left:40%;
+   
+}
+/* About section */
+#about{
+    margin: 20% 8% 0% 8%;
+}
+.heading{
+    text-align: center;
+}
+.heading h2 /* descendent selector */{
+  
+    font-size: 35px;
+    font-weight: bolder;
+}
+.heading p{
+    color: green;
+    font-size: 20px;
+}
+.about_content{
+    display: grid;/* to create grid */
+    grid-template-columns:repeat(2, 1fr); /* to set the column numbers and repeat columns; . fr(frame) 1fr=225px */
+    gap: 2rem; /* grid gap. 1 rem=16px */
+    margin-top: 3rem;
+}
+about_image img{
+    width: 80%;
+    border-radius: 10%;
+}
+
+.about_details p{
+    text-align: justify;
+    font-size: 18px;
+    font-weight: 500;
+}
+.info {
+    margin-top: 1rem;
+   
+}
+
+.info_box{
+    margin-bottom: 1rem;
+    align-items: center;
+     font-size: 18px;
+    font-weight: 300;
+}
+.info_box span{
+    margin-left: 10px;
+    
+}
+/* Skill Section */
+#skill{
+    margin: 8% 8% 0% 8%;
+}
+.progress_container{
+    display: grid;/* to create grid */
+    grid-template-columns:repeat(2, 1fr); /* to set the column numbers and repeat columns; . fr(frame) 1fr=225px */
+    gap: 2rem; /* grid gap. 1 rem=16px */
+    margin-top: 2rem;
+}
+.skill_image{
+    width:50%;
+    padding-left: 4rem;
+    object-position: center;/* to specify the position of the object with in x-y cordinates */
+
+}
+
+.progress_bar{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+    padding:1rem 0px;
+    position:relative;
+}
+.progress_bar span{
+    font-size: 15px;
+    font-weight: 600;
+}
+.base_bar{
+    width: 100%;
+    background-color: black;
+    height: 0.5rem;
+    border-radius: 8px;
+    position: absolute;
+ bottom: 0px;
+}
+.html_bar{
+    background-color: orange;
+    width: 95%;
+}
+.css_bar{
+    background-color: orange;
+    width: 90%;
+    
+}
+.js_bar{
+    background-color: orange;
+    width: 85%;
+}
+.react_bar{
+    background-color: orange;
+    width: 89%;
+}
+/* Contact section */
+.icon_bar{
+    /* to make items to exact center */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+
+    margin-top: 3rem;
+}
+.icon{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    /* to make items to exact center  */
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 15px;
+   /*  border: 1px solid black; */
+    
+}
+.icon i{
+    color: black;
+    font-size: 2rem;
+}
+.icon:hover{
+    /* linear gradient */
+    background-image:linear-gradient(to bottom right,yellow,red);
+}
+.icon:hover i{
+    color: white;
+    /* Animation */
+    animation: shake 0.2s;
+}
+@keyframes shake {
+    10% {tranfsorm:rotate(15deg);}
+    30%{transform: rotate(-15deg);}
+    50%{tranfsorm:rotate(15deg);}
+    70%{tranfsorm:rotate(-15deg);}
+    90%{tranfsorm:rotate(15deg);}
+    100%{tranfsorm:rotate(-15deg);}
+}
+footer h4{
+    text-align: center;
+    font-weight: bolder;
+    margin-top: 3rem;
+}
+.up{
+   
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+   
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin:0px 15px;
+    background-image:linear-gradient(to bottom right,yellow,red);
+    float:right;
+    color:blue;
+
+    
+
+}
+.up i:hover{
+    color:white ;
+
+}
+.container{
+    scroll-behavior: smooth;
+}
